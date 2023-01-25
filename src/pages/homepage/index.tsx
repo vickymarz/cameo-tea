@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AverageSleepTime, Header, Timer, SleepEfficiency } from "../../components"
+import { AverageSleepTime, Header, Timer, SleepEfficiency, Feedback } from "../../components"
 import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
 
 export const Homepage = () => {
@@ -21,6 +21,7 @@ export const Homepage = () => {
           <AverageSleepTime />
           <SleepEfficiency />
         </div>
+        <Feedback />
     </div>
   )
 }

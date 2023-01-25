@@ -8,11 +8,11 @@ export const Feedback = () => {
           <p>Your sleep quality looks very good today.</p>
           <p>Want to improve it? Find your ideal bedtime for tomorrow.</p>
         </div>
-        <div className="m-2rem flex flex-col justify-center items-center gap-y-[0.75rem]">
+        <div className="py-[2rem] flex flex-col  gap-y-[0.75rem]">
           <Button type="button" className="bg-[#4dffb4] rounded-[1600px] px-[2rem] py-[1.25rem] text-center text-[#2e2e33] text-[1.25rem] font-bold">
             Improve Sleep
           </Button>
-          <Link to='/' className="text-[#f1f1f1] text-center">
+          <Link to='/' className="text-[#f1f1f1] text-center decoration-solid decoration-[#f1f1f1]">
             How it works
           </Link>
         </div>
