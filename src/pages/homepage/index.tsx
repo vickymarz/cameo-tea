@@ -10,7 +10,7 @@ export const Homepage = () => {
   return (
     <div className="min-h-full w-full bg-[#242426] px-[16px]">
         <Header />
-        <div className="pt-[100px] pb-[32px]">
+        <div className="pt-[30px] pb-[32px]">
           <h2 className="text-[1.5rem] font-bold text-[#fff]">How well did you sleep?</h2>
           <p className="text-[1.125rem] text-[#f1f1f1]">Answer the questions as well as you can</p>
         </div>
