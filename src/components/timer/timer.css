@@ -1,19 +1,17 @@
 .css-1vcokmn-MuiCalendarOrClockPicker-root,
 .MuiCalendarOrClockPicker-root {
-  background-color: #2e2e33 !important;
+  background-color: #2e2e33;
   color: white;
   text-align: center;
   font-size: 1.25rem !important;
   position: relative !important;
 }
 
-.css-u0soqy-MuiPickerStaticWrapper-root,
 .MuiPickerStaticWrapper-root {
     padding-bottom: 40px !important;
 }
 
-.css-1hbyad5-MuiTypography-root,
-.MuiTypography-root {
+.MuiTypography-overline {
   color: white !important;
   text-align: center !important;
   font-size: 1.25rem !important;
@@ -28,9 +26,7 @@
 }
 
 .css-1mgnakj-MuiTypography-root-PrivatePickersToolbarText-root,
-.css-1lfjyjz-MuiTypography-root-PrivatePickersToolbarText-root-MuiTimePickerToolbar-separator,
-.MuiTypography-root-PrivatePickersToolbarText-root,
-.MuiTypography-root-PrivatePickersToolbarText-root-MuiTimePickerToolbar-separator {
+.css-1lfjyjz-MuiTypography-root-PrivatePickersToolbarText-root-MuiTimePickerToolbar-separator {
     color: white !important;
     font-family: OpenSans;
     font-size: 3rem !important;
@@ -54,8 +50,7 @@
     text-align: center !important;
 }
 
-.css-iyrw7v-MuiTypography-root-PrivatePickersToolbarText-root.Mui-selected,
-.MuiTypography-root-PrivatePickersToolbarText-root.Mui-selected {
+.css-iyrw7v-MuiTypography-root-PrivatePickersToolbarText-root.Mui-selected {
     font-size: 2rem !important;
     color: white !important;
     font-family: OpenSans;
@@ -68,27 +63,21 @@
 }
 
 .css-umzx0k-MuiClock-pin,
-.MuiClock-pin
-.css-d0vs79-MuiClockPointer-root,
-.MuiClockPointer-root   {
+.css-d0vs79-MuiClockPointer-root  {
     background: white !important;
 }
 
 .css-zddqwy-MuiClockNumber-root,
-.MuiClockNumber-root
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root,
-.MuiButtonBase-root-MuiButton-root  {
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root  {
     color: white !important;
 }
 
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
-.MuiInputBase-input-MuiOutlinedInput-input {
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     color: white !important;
     border: 1px solid white !important;
 }
 
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root,
-.MuiButtonBase-root-MuiButton-root {
+.MuiButtonBase-root .MuiButton-root {
     display: none !important;
 }
 
@@ -101,10 +90,8 @@
     font-size: 1.25rem !important;
 }
 
-.css-h2z9v1-MuiButtonBase-root-MuiIconButton-root-MuiClock-amButton,
-.MuiButtonBase-root-MuiIconButton-root-MuiClock-amButton
-.css-zcgqxx-MuiButtonBase-root-MuiIconButton-root-MuiClock-pmButton,
-.MuiButtonBase-root-MuiIconButton-root-MuiClock-pmButton {
+.MuiClock-amButton,
+.MuiClock-pmButton {
     position: absolute !important;
     bottom: 10px !important;
 }
