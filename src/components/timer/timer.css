@@ -83,7 +83,8 @@
     border: 1px solid white !important;
 }
 
-.MuiFormHelperText-filled {
+.MuiFormHelperText-filled,
+.css-v7esy {
     color: wheat;
 }
 
