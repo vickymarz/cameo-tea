@@ -50,7 +50,9 @@
     text-align: center !important;
 }
 
-.css-iyrw7v-MuiTypography-root-PrivatePickersToolbarText-root.Mui-selected {
+.MuiTypography-root
+.PrivatePickersToolbarText-root
+.Mui-selected {
     font-size: 2rem !important;
     color: white !important;
     font-family: OpenSans;
@@ -62,22 +64,25 @@
     text-align: center !important;
 }
 
-.css-umzx0k-MuiClock-pin,
-.css-d0vs79-MuiClockPointer-root  {
+.MuiClock-pin,
+.MuiClockPointer-root  {
     background: white !important;
 }
 
-.css-zddqwy-MuiClockNumber-root,
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root  {
+.MuiClockNumber-root,
+.MuiButtonBase-root
+.MuiButton-root  {
     color: white !important;
 }
 
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+.MuiInputBase-input
+.MuiOutlinedInput-input {
     color: white !important;
     border: 1px solid white !important;
 }
 
-.MuiButtonBase-root .MuiButton-root {
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root,
+.css-1ujsas3 {
     display: none !important;
 }
 
