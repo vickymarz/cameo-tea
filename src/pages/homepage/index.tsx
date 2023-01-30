@@ -37,7 +37,7 @@ export const Homepage = () => {
     sleepEfficiency()
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [value3])
+  }, [value3, value1, value2])
 
   return (
     <div className="min-h-full w-full bg-[#242426] px-[16px]">
