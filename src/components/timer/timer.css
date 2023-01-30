@@ -76,7 +76,8 @@
 }
 
 .MuiInputBase-input
-.MuiOutlinedInput-input {
+.MuiOutlinedInput-input,
+.css-1x5jdmq {
     color: white !important;
     border: 1px solid white !important;
 }
