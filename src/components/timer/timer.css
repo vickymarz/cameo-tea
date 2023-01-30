@@ -67,17 +67,17 @@
     background: white !important;
 }
 
-.css-zddqwy-MuiClockNumber-root,
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root  {
+.MuiClockNumber-root,
+.MuiButton-root  {
     color: white !important;
 }
 
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+.MuiOutlinedInput-input {
     color: white !important;
     border: 1px solid white !important;
 }
 
-.MuiButtonBase-root .MuiButton-root {
+.MuiButton-root {
     display: none !important;
 }
 
