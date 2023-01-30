@@ -14,14 +14,14 @@ export const Homepage = () => {
 
   useEffect(() => {
     const averageSleepTime = () => {
-      const wakeTime = moment(value1)
-      const sleepTime = moment(value2)
+      const sleepTime = moment(value1)
+      const wakeTime = moment(value3)
       const difference = wakeTime.diff(sleepTime, 'hours')
       setAverage(difference)
     }
     averageSleepTime()
 
-  }, [value1, value2, average])
+  }, [value1, value3, average])
 
   useEffect(() => {
     const sleepEfficiency = () => {
@@ -40,9 +40,21 @@ export const Homepage = () => {
           <h2 className="text-[1.5rem] font-bold text-[#fff]">How well did you sleep?</h2>
           <p className="text-[1.125rem] text-[#f1f1f1]">Answer the questions as well as you can</p>
         </div>
-        <Timer title='When did you go to bed?' value={value2} setValue={setValue2}/>
-        <Timer title='What time did you sleep?' value={value3} setValue={setValue3}/>
-        <Timer title='When did you wake up?' value={value1} setValue={setValue1}/>
+        <Timer
+          title='When did you go to bed?'
+          value={value1} setValue={setValue1}
+        />
+        <Timer
+          title='What time did you sleep?'
+          value={value2}
+          setValue={setValue2}
+        />
+        <Timer
+          title='When did you wake up?'
+          value={value3}
+          setValue={setValue3}
+          minDateTime={value1}
+        />
         <div className='flex justify-between gap-x-[10px]'>
           <AverageSleepTime average={average}/>
           <SleepEfficiency efficiency={efficiency}/>

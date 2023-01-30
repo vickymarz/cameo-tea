@@ -1,6 +1,5 @@
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
-import { StaticTimePicker } from '@mui/x-date-pickers/StaticTimePicker';
 import { StaticDateTimePicker } from '@mui/x-date-pickers/StaticDateTimePicker';
 import TextField from '@mui/material/TextField';
 import type {} from '@mui/x-date-pickers/themeAugmentation';
@@ -10,8 +9,9 @@ type TimerProp = {
   title:string
   value: any;
   setValue: (x:any) => void
+  minDateTime?: string | moment.Moment
 }
-export const Timer = ({title, value, setValue}: TimerProp) => {
+export const Timer = ({title, value, setValue, minDateTime}: TimerProp) => {
 
   return (
       // <LocalizationProvider dateAdapter={AdapterMoment}>
@@ -34,6 +34,7 @@ export const Timer = ({title, value, setValue}: TimerProp) => {
             setValue(newValue);
           }}
           toolbarTitle={title}
+          minDateTime={minDateTime}
        />
        </LocalizationProvider>
   )
