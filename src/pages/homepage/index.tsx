@@ -4,9 +4,9 @@ import { AverageSleepTime, Header, Timer, SleepEfficiency, Feedback } from "../.
 import moment from 'moment';
 
 export const Homepage = () => {
-  const [value1, setValue1] = useState(0);
-  const [value2, setValue2] = useState(0);
-  const [value3, setValue3] = useState(0);
+  const [value1, setValue1] = useState(moment());
+  const [value2, setValue2] = useState(moment());
+  const [value3, setValue3] = useState(moment());
   const [average, setAverage] = useState(0)
   const [efficiency, setEfficiency] = useState(0)
 
@@ -40,9 +40,9 @@ export const Homepage = () => {
           <h2 className="text-[1.5rem] font-bold text-[#fff]">How well did you sleep?</h2>
           <p className="text-[1.125rem] text-[#f1f1f1]">Answer the questions as well as you can</p>
         </div>
-        <Timer title='When did you wake up today?' value={value1} setValue={setValue1}/>
-        <Timer title='When did you go to bed yesterday?' value={value2} setValue={setValue2}/>
-        <Timer title='What time did you fall asleep yesterday?' value={value3} setValue={setValue3}/>
+        <Timer title='When did you go to bed?' value={value2} setValue={setValue2}/>
+        <Timer title='What time did you sleep?' value={value3} setValue={setValue3}/>
+        <Timer title='When did you wake up?' value={value1} setValue={setValue1}/>
         <div className='flex justify-between gap-x-[10px]'>
           <AverageSleepTime average={average}/>
           <SleepEfficiency efficiency={efficiency}/>

@@ -1,6 +1,7 @@
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
 import { StaticTimePicker } from '@mui/x-date-pickers/StaticTimePicker';
+import { StaticDateTimePicker } from '@mui/x-date-pickers/StaticDateTimePicker';
 import TextField from '@mui/material/TextField';
 import type {} from '@mui/x-date-pickers/themeAugmentation';
 import './timer.css'
@@ -13,16 +14,27 @@ type TimerProp = {
 export const Timer = ({title, value, setValue}: TimerProp) => {
 
   return (
+      // <LocalizationProvider dateAdapter={AdapterMoment}>
+      //                <StaticTimePicker
+      //   displayStaticWrapperAs="mobile"
+      //   value={value}
+      //   onChange={(newValue) => {
+      //     setValue(newValue);
+      //   }}
+      //   renderInput={(params) => <TextField {...params} />}
+      //   toolbarTitle={title}
+      // />
+      // </LocalizationProvider>
       <LocalizationProvider dateAdapter={AdapterMoment}>
-                     <StaticTimePicker
-        displayStaticWrapperAs="mobile"
-        value={value}
-        onChange={(newValue) => {
-          setValue(newValue);
-        }}
-        renderInput={(params) => <TextField {...params} />}
-        toolbarTitle={title}
-      />
-      </LocalizationProvider>
+        <StaticDateTimePicker
+          label="Responsive"
+          renderInput={(params) => <TextField {...params} />}
+          value={value}
+          onChange={(newValue) => {
+            setValue(newValue);
+          }}
+          toolbarTitle={title}
+       />
+       </LocalizationProvider>
   )
 }
