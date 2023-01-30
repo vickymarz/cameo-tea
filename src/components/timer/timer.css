@@ -87,7 +87,8 @@
 }
 
 .MuiTypography-root,
-.MuiSvgIcon-root {
+.MuiSvgIcon-root,
+.MuiClockNumber-root {
     color: white !important;
 }
 
@@ -104,3 +105,4 @@
 .MuiFormLabel-root {
     display: none !important;
 }
+
