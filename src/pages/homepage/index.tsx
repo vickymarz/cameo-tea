@@ -27,10 +27,8 @@ export const Homepage = () => {
       const bedTime = moment(value1)
       const sleepTime = moment(value2)
       const difference = sleepTime.diff(bedTime, 'hours')
-      console.log(average, difference)
       const result = (average/difference) * 100
       if(Number.isNaN(result)) {
-        console.log(true)
         setEfficiency(0)
       } else {
         setEfficiency(result)
