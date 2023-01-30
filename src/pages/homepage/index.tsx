@@ -10,28 +10,36 @@ export const Homepage = () => {
   const [average, setAverage] = useState(0)
   const [efficiency, setEfficiency] = useState(0)
 
-
-
   useEffect(() => {
     const averageSleepTime = () => {
-      const sleepTime = moment(value1)
+      const sleepTime = moment(value2)
       const wakeTime = moment(value3)
       const difference = wakeTime.diff(sleepTime, 'hours')
       setAverage(difference)
     }
     averageSleepTime()
 
-  }, [value1, value3, average])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [value3])
 
   useEffect(() => {
     const sleepEfficiency = () => {
-    const bedTime = moment(value3).hours();
-     const result = (average/bedTime) * 100
-      setEfficiency(result)
+      const bedTime = moment(value1)
+      const sleepTime = moment(value2)
+      const difference = sleepTime.diff(bedTime, 'hours')
+      console.log(average, difference)
+      const result = (average/difference) * 100
+      if(Number.isNaN(result)) {
+        console.log(true)
+        setEfficiency(0)
+      } else {
+        setEfficiency(result)
+      }
     }
     sleepEfficiency()
 
-  }, [value3, average])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [value3])
 
   return (
     <div className="min-h-full w-full bg-[#242426] px-[16px]">
@@ -42,18 +50,20 @@ export const Homepage = () => {
         </div>
         <Timer
           title='When did you go to bed?'
-          value={value1} setValue={setValue1}
+          value={value1}
+          setValue={setValue1}
         />
         <Timer
           title='What time did you sleep?'
           value={value2}
           setValue={setValue2}
+          minDateTime={value1}
         />
         <Timer
           title='When did you wake up?'
           value={value3}
           setValue={setValue3}
-          minDateTime={value1}
+          minDateTime={value2}
         />
         <div className='flex justify-between gap-x-[10px]'>
           <AverageSleepTime average={average}/>

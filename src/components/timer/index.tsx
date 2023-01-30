@@ -9,26 +9,16 @@ type TimerProp = {
   title:string
   value: any;
   setValue: (x:any) => void
-  minDateTime?: string | moment.Moment
+  minDateTime?: string | moment.Moment,
+  error?: boolean
 }
-export const Timer = ({title, value, setValue, minDateTime}: TimerProp) => {
+export const Timer = ({title, value, setValue, minDateTime }: TimerProp) => {
 
   return (
-      // <LocalizationProvider dateAdapter={AdapterMoment}>
-      //                <StaticTimePicker
-      //   displayStaticWrapperAs="mobile"
-      //   value={value}
-      //   onChange={(newValue) => {
-      //     setValue(newValue);
-      //   }}
-      //   renderInput={(params) => <TextField {...params} />}
-      //   toolbarTitle={title}
-      // />
-      // </LocalizationProvider>
       <LocalizationProvider dateAdapter={AdapterMoment}>
         <StaticDateTimePicker
-          label="Responsive"
-          renderInput={(params) => <TextField {...params} />}
+          label="Enter correct date and time"
+          renderInput={(params) => <TextField {...params} helperText="Kindly enter a valid date and time" />}
           value={value}
           onChange={(newValue) => {
             setValue(newValue);
