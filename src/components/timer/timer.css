@@ -77,9 +77,14 @@
 
 .MuiInputBase-input
 .MuiOutlinedInput-input,
-.css-1x5jdmq {
+.css-1x5jdmq,
+.MuiInputBase-formControl {
     color: white !important;
     border: 1px solid white !important;
+}
+
+.MuiFormHelperText-filled {
+    color: wheat;
 }
 
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root,
