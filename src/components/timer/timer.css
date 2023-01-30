@@ -50,7 +50,7 @@
     text-align: center !important;
 }
 
-.css-iyrw7v-MuiTypography-root-PrivatePickersToolbarText-root.Mui-selected {
+.Mui-selected {
     font-size: 2rem !important;
     color: white !important;
     font-family: OpenSans;
@@ -62,8 +62,8 @@
     text-align: center !important;
 }
 
-.css-umzx0k-MuiClock-pin,
-.css-d0vs79-MuiClockPointer-root  {
+.MuiClock-pin,
+.MuiClockPointer-root  {
     background: white !important;
 }
 
