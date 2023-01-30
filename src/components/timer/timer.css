@@ -1,5 +1,6 @@
-.css-1vcokmn-MuiCalendarOrClockPicker-root {
-  background-color: #2e2e33;
+.css-1vcokmn-MuiCalendarOrClockPicker-root,
+.MuiCalendarOrClockPicker-root {
+  background-color: #2e2e33 !important;
   color: white;
   text-align: center;
   font-size: 1.25rem !important;
