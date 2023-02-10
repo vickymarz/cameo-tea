@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AverageSleepTime, Header, TimePicker, SleepEfficiency, Feedback } from "../../components"
+import { RecommendedBedTime, Header, TimePicker, SleepEfficiency, Feedback } from "../../components"
 // import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
 import moment from 'moment';
 
@@ -50,7 +50,7 @@ export const Homepage = () => {
         />
         <div className='flex justify-between gap-x-[10px]'>
           <SleepEfficiency efficiency={efficiency}/>
-          
+          <RecommendedBedTime time={time}/>
         </div>
         <Feedback />
     </div>
