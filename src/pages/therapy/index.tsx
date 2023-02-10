@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { AverageSleepTime, Header, DateTimer, SleepEfficiency, Feedback } from "../../components"
+import { AverageSleepTime, Header, Timer, SleepEfficiency, Feedback } from "../../components"
 // import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
 import moment from 'moment';
 
@@ -43,25 +43,12 @@ export const Homepage = () => {
     <div className="min-h-full w-full bg-[#242426] px-[16px]">
         <Header />
         <div className="pt-[30px] pb-[32px]">
-          <h2 className="text-[1.5rem] font-bold text-[#fff]">How well did you sleep?</h2>
-          <p className="text-[1.125rem] text-[#f1f1f1]">Answer the questions as well as you can</p>
+          <h2 className="text-[1.5rem] font-bold text-[#fff]">Find your next ideal bed time</h2>
         </div>
-        <DateTimer
+        <Timer
           title='When did you go to bed?'
           value={value1}
           setValue={setValue1}
-        />
-        <DateTimer
-          title='What time did you sleep?'
-          value={value2}
-          setValue={setValue2}
-          minDateTime={value1}
-        />
-        <DateTimer
-          title='When did you wake up?'
-          value={value3}
-          setValue={setValue3}
-          minDateTime={value2}
         />
         <div className='flex justify-between gap-x-[10px]'>
           <AverageSleepTime average={average}/>
