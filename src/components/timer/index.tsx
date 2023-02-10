@@ -2,6 +2,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
 import { StaticTimePicker } from '@mui/x-date-pickers/StaticTimePicker';
 import TextField from '@mui/material/TextField';
+import './style.css'
 
 type TimerProp = {
     title:string
