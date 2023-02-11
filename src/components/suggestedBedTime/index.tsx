@@ -10,7 +10,7 @@ export const SuggestedBedTime = ({timer}: {timer: string}) => {
           <span className='text-[#fff] text-[1.125rem] font-bold'>Go to bed </span>
         </div>
         <div className='flex justify-center flex-col items-center gap-y-[0.5rem] text-[#a6ffd3]'>
-          <p className='font-bold text-[2.25rem]'>{timer}</p>
+          <p className='font-bold text-[1.5rem]'>{timer}</p>
         </div>
       </div>
     )

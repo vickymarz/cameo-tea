@@ -36,7 +36,7 @@ export const Therapy = () => {
           <SuggestedBedTime timer={recommendedWakeTime()}/>
         </div>
         <div className="mt-[2.81rem]">
-      <div className="flex flex-col justify-start items-start gap-y-[0.75rem] text-[#f1f1f1] leading-[1.56] text-[1.125rem]">
+      <div className="flex flex-col justify-start items-start gap-y-[0.75rem] text-[#f1f1f1] leading-[1.56] text-[1rem]">
           <p>Go to bed at { recommendedWakeTime()} tonight</p>
           <p>Come back tomorrow for more</p>
         </div>
