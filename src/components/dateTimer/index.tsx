@@ -12,7 +12,7 @@ type TimerProp = {
   minDateTime?: string | moment.Moment,
   error?: boolean
 }
-export const Timer = ({title, value, setValue, minDateTime }: TimerProp) => {
+export const DateTimer = ({title, value, setValue, minDateTime }: TimerProp) => {
 
   return (
       <LocalizationProvider dateAdapter={AdapterMoment}>
