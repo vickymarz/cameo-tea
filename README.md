@@ -72,7 +72,7 @@ This is a web app built to provide sleep restriction therapy for people finding 
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="https://camotea.netlify.app/">Camotea</a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
 
