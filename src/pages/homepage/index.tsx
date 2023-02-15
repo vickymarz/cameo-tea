@@ -28,8 +28,8 @@ export const Homepage = () => {
   useEffect(() => {
     const sleepEfficiency = () => {
       const bedTime = moment(value1)
-      const sleepTime = moment(value2)
-      const difference = sleepTime.diff(bedTime, 'hours')
+      const wakeTime = moment(value3)
+      const difference = wakeTime.diff(bedTime, 'hours')
       setTimeSpent(difference)
       const result = (average/difference) * 100
       if(Number.isNaN(result)) {
