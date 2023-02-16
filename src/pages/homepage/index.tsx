@@ -30,6 +30,7 @@ export const Homepage = () => {
       const bedTime = moment(value1)
       const wakeTime = moment(value3)
       const difference = wakeTime.diff(bedTime, 'hours')
+      console.log(difference)
       setTimeSpent(difference)
       const result = (average/difference) * 100
       if(Number.isNaN(result)) {
@@ -41,7 +42,7 @@ export const Homepage = () => {
     sleepEfficiency()
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [value3, value1, value2])
+  }, [value3, value1, value2, average])
 
   return (
     <div className="min-h-full w-full bg-[#242426] px-[16px]">
@@ -65,7 +66,7 @@ export const Homepage = () => {
           title='When did you wake up?'
           value={value3}
           setValue={setValue3}
-          minDateTime={value2}
+          minDateTime={value1}
         />
         <div className='flex justify-between gap-x-[10px]'>
           <AverageSleepTime average={average}/>
