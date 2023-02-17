@@ -34,7 +34,7 @@ export const Homepage = () => {
       setTimeSpent(difference)
       const division = (average/difference)
       const result = division * 100
-      console.log(average/difference, result)
+      console.log(average/difference, division, result)
       if(Number.isNaN(result)) {
         setEfficiency(0)
       } else {
