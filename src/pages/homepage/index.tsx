@@ -23,7 +23,7 @@ export const Homepage = () => {
     averageSleepTime()
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [value3])
+  }, [value3, value2])
 
   useEffect(() => {
     const sleepEfficiency = () => {
@@ -32,7 +32,9 @@ export const Homepage = () => {
       const difference = wakeTime.diff(bedTime, 'hours')
       console.log(difference)
       setTimeSpent(difference)
-      const result = (average/difference) * 100
+      const division = (average/difference)
+      const result = division * 100
+      console.log(average/difference, result)
       if(Number.isNaN(result)) {
         setEfficiency(0)
       } else {
@@ -42,7 +44,7 @@ export const Homepage = () => {
     sleepEfficiency()
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [value3, value1, value2, average])
+  }, [value3, value1, average, efficiency])
 
   return (
     <div className="min-h-full w-full bg-[#242426] px-[16px]">
