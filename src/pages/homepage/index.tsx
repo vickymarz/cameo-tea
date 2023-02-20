@@ -23,7 +23,7 @@ export const Homepage = () => {
     averageSleepTime()
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [value3, value2])
+  }, [value3])
 
   useEffect(() => {
     const sleepEfficiency = () => {

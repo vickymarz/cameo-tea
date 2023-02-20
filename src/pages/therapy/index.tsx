@@ -6,12 +6,13 @@ import { Link } from 'react-router-dom';
 
 export const Therapy = () => {
   const {efficiency, timeSpent} = SleepEfficiencyContextUse()
-  const [wakeTime, setWakeTime] = useState(new Date());
+  const [wakeTime, setWakeTime] = useState(moment());
 
   const recommendedWakeTime = () => {
     if(efficiency < 80) {
       const bedTime = moment(wakeTime).subtract(6, 'hours')
       const result = bedTime.format("H:MM A");
+      console.log(bedTime, wakeTime, result)
       return result
     } else {
       const bedTime = moment(wakeTime).subtract(timeSpent, 'hour')
